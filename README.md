@@ -1,29 +1,31 @@
-📄 Django DRF Post API
+📄 Django DRF Post API with Nested Categories
 
-A **simple Django REST Framework project** built to practice creating APIs from scratch.  
-This project now includes **ModelSerializer, ModelViewSet, and Router** to provide full CRUD operations automatically.
+A **clean and minimal Django REST Framework project** built to practice API development from scratch.  
+This version includes **nested serializers** for related models, allowing posts to show their associated category in JSON responses.  
 
 ---
 
 ## 🚀 Features
 
-- **Post model** with title, content, and timestamp  
-- **ModelSerializer** converts models to JSON automatically  
-- **ModelViewSet + Router** provides full CRUD:
+- **Post model** with title, content, timestamp, and category  
+- **Category model** to organize posts  
+- **ModelSerializer** automatically converts models to JSON  
+- **Nested serializer**: PostSerializer includes category data  
+- **ModelViewSet + Router** provides full CRUD operations:
   - List all posts  
   - Retrieve a single post  
   - Create new posts  
   - Update posts (full & partial)  
   - Delete posts  
-- Minimal setup — perfect for learning DRF basics and extending later
+- Optional **search** and **ordering** on posts  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python 3**  
-- **Django 5**  
-- **Django REST Framework**  
+- Python 3  
+- Django 5  
+- Django REST Framework  
 - SQLite (default development database)
 
 ---
@@ -49,7 +51,7 @@ env\Scripts\activate
 bash
 Copy code
 pip install djangorestframework
-pip install -r requirements.txt   # if you have one
+pip install -r requirements.txt   # if available
 4️⃣ Apply migrations:
 
 bash
@@ -66,15 +68,15 @@ bash
 Copy code
 python manage.py runserver
 📁 Project Structure
-pgsql
+bash
 Copy code
 post_api_project/
 │
 ├── posts/
 │   ├── models.py
-│   ├── serializers.py
-│   ├── views.py        # <-- now includes PostViewSet
-│   ├── urls.py         # <-- now includes Router
+│   ├── serializers.py       # nested CategorySerializer
+│   ├── views.py             # ModelViewSet
+│   ├── urls.py              # Router for CRUD
 │   ├── admin.py
 │   └── apps.py
 │
@@ -89,12 +91,24 @@ Endpoint	Method	Description
 /api/posts/	GET	List all posts
 /api/posts/<id>/	GET	Retrieve a single post
 /api/posts/	POST	Create a new post
-/api/posts/<id>/	PUT	Update a post fully
-/api/posts/<id>/	PATCH	Update a post partially
+/api/posts/<id>/	PUT	Full update of a post
+/api/posts/<id>/	PATCH	Partial update of a post
 /api/posts/<id>/	DELETE	Delete a post
 
-Accessible via DRF Browsable API at http://127.0.0.1:8000/api/posts/
+Each post includes nested category data:
 
+json
+Copy code
+{
+    "id": 1,
+    "title": "Hello",
+    "content": "My first post",
+    "created_at": "2025-11-16T03:00:00Z",
+    "category": {
+        "id": 1,
+        "name": "Tech"
+    }
+}
 ⭐ Learning Outcomes
 DRF setup and configuration
 
@@ -102,16 +116,18 @@ Returning JSON with ModelSerializer
 
 Full CRUD with ModelViewSet and Router
 
-Preparing for nested serializers, relations, and advanced API patterns
+Nested serializers for related models
+
+Search and ordering for better API usability
 
 🔮 Future Improvements
-Add nested serializers (e.g., categories or authors)
+Add authentication & permissions
 
-Add Postman tests
+Expand relationships (e.g., authors, comments)
 
-Extend to full blog API
+Add Postman tests or Swagger documentation
 
-Implement authentication & permissions
+Extend to a full blog API
 
 ❤️ Author
 Banu Mariwan
